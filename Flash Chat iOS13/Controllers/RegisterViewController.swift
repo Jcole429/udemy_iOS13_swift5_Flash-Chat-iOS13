@@ -22,7 +22,7 @@ class RegisterViewController: UIViewController {
                     self.errorLabel.text = e.localizedDescription
                     print(e)
                 } else {
-                    self.performSegue(withIdentifier: "RegisterToChat", sender: self)
+                    self.performSegue(withIdentifier: Constants.registerSegue, sender: self)
                 }
             }
         }
