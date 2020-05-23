@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Gu8-I8-D5W">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Gu8-I8-D5W">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -30,8 +30,8 @@
                                     <segue destination="5v2-hE-4Ub" kind="show" id="m9A-C3-20U"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⚡️FlashChat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y7D-jv-BlJ">
-                                <rect key="frame" x="52" y="418" width="310" height="60"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⚡️FlashChat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y7D-jv-BlJ" customClass="CLTypingLabel" customModule="CLTypingLabel">
+                                <rect key="frame" x="10" y="418" width="394" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="ph1-wX-D3a"/>
                                 </constraints>
@@ -59,14 +59,13 @@
                         <constraints>
                             <constraint firstItem="dWe-nW-2HB" firstAttribute="trailing" secondItem="w0w-hE-MVy" secondAttribute="trailing" id="7Vx-Xq-VaO"/>
                             <constraint firstItem="dWe-nW-2HB" firstAttribute="leading" secondItem="w0w-hE-MVy" secondAttribute="leading" id="Ag7-Hh-D9X"/>
-                            <constraint firstItem="y7D-jv-BlJ" firstAttribute="centerY" secondItem="H86-OM-sMN" secondAttribute="centerY" id="Ipj-e5-54T"/>
+                            <constraint firstItem="w0w-hE-MVy" firstAttribute="trailing" secondItem="y7D-jv-BlJ" secondAttribute="trailing" constant="10" id="GqR-hB-W5g"/>
+                            <constraint firstItem="y7D-jv-BlJ" firstAttribute="centerY" secondItem="H86-OM-sMN" secondAttribute="centerY" id="Kr6-Ns-6r1"/>
                             <constraint firstItem="dWe-nW-2HB" firstAttribute="bottom" secondItem="w0w-hE-MVy" secondAttribute="bottom" id="ZsM-5p-lNb"/>
                             <constraint firstItem="dWe-nW-2HB" firstAttribute="top" secondItem="h2x-tz-C9Y" secondAttribute="bottom" constant="8" id="cnI-Zh-aEc"/>
-                            <constraint firstItem="w0w-hE-MVy" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="y7D-jv-BlJ" secondAttribute="trailing" id="eaW-iX-nU1"/>
-                            <constraint firstItem="y7D-jv-BlJ" firstAttribute="leading" secondItem="w0w-hE-MVy" secondAttribute="leading" constant="52" id="jQ7-o7-bnG"/>
+                            <constraint firstItem="y7D-jv-BlJ" firstAttribute="leading" secondItem="w0w-hE-MVy" secondAttribute="leading" constant="10" id="kcW-a6-HHf"/>
                             <constraint firstItem="h2x-tz-C9Y" firstAttribute="trailing" secondItem="w0w-hE-MVy" secondAttribute="trailing" id="sNZ-Ul-l2q"/>
                             <constraint firstItem="h2x-tz-C9Y" firstAttribute="leading" secondItem="w0w-hE-MVy" secondAttribute="leading" id="tLN-qz-xiG"/>
-                            <constraint firstItem="y7D-jv-BlJ" firstAttribute="centerX" secondItem="H86-OM-sMN" secondAttribute="centerX" id="vNd-pq-rnh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="w0w-hE-MVy"/>
                     </view>
@@ -151,14 +150,23 @@
                                     <constraint firstAttribute="trailing" secondItem="jY9-l3-E1g" secondAttribute="trailing" id="y40-C4-FjS"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="71h-bZ-nqD">
+                                <rect key="frame" x="0.0" y="352" width="414" height="21"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" name="BrandLightBlue"/>
                         <constraints>
                             <constraint firstItem="Scg-da-zi8" firstAttribute="trailing" secondItem="stz-qy-NwU" secondAttribute="trailing" id="3Fk-Xo-DV8"/>
+                            <constraint firstItem="71h-bZ-nqD" firstAttribute="leading" secondItem="stz-qy-NwU" secondAttribute="leading" id="KXm-iQ-TI3"/>
                             <constraint firstItem="j5s-Lc-WfT" firstAttribute="trailing" secondItem="stz-qy-NwU" secondAttribute="trailing" id="Tq9-EG-2wo"/>
                             <constraint firstItem="Scg-da-zi8" firstAttribute="leading" secondItem="stz-qy-NwU" secondAttribute="leading" id="Ub1-7q-3QS"/>
+                            <constraint firstItem="stz-qy-NwU" firstAttribute="trailing" secondItem="71h-bZ-nqD" secondAttribute="trailing" id="aw2-B1-ZMz"/>
                             <constraint firstItem="Scg-da-zi8" firstAttribute="top" secondItem="stz-qy-NwU" secondAttribute="top" id="oh4-tH-9d1"/>
                             <constraint firstItem="j5s-Lc-WfT" firstAttribute="leading" secondItem="stz-qy-NwU" secondAttribute="leading" id="uog-qO-Id1"/>
+                            <constraint firstItem="71h-bZ-nqD" firstAttribute="top" secondItem="j5s-Lc-WfT" secondAttribute="bottom" constant="10" id="v01-ne-gJQ"/>
                             <constraint firstItem="j5s-Lc-WfT" firstAttribute="top" secondItem="Scg-da-zi8" secondAttribute="bottom" constant="-100" id="wib-t6-dnB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="stz-qy-NwU"/>
@@ -166,6 +174,7 @@
                     <navigationItem key="navigationItem" id="BKL-DZ-6la"/>
                     <connections>
                         <outlet property="emailTextfield" destination="u72-XV-6FN" id="Nfc-8N-TNr"/>
+                        <outlet property="errorLabel" destination="71h-bZ-nqD" id="hbF-Gy-eG9"/>
                         <outlet property="passwordTextfield" destination="hLb-P9-NkF" id="uaM-fo-m8M"/>
                         <segue destination="lwd-AH-u8E" kind="show" identifier="RegisterToChat" id="RUb-BU-m5G"/>
                     </connections>
